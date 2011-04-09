@@ -2,11 +2,12 @@ package proyecto.celular
 
 class Telefono {
 	
-	static hasMany= [plans:Plan]
-	List plans
-	
+	static hasMany= [planes:Plan]
+	List planes
 	String marca
 	String modelo
+	
+	
 	Boolean wifi
 	Boolean bluetooth
 	Boolean threeG
@@ -19,4 +20,9 @@ class Telefono {
 		marca(blank: false)
 		modelo(blank: false)
     }
+
+	@Override
+	public String toString() {
+		return marca+ " - " +modelo;
+	}	
 }
