@@ -2,8 +2,9 @@ package proyecto.celular
 
 class Plan {
 	
-	String abono
+	String nombre
 	String empresa
+	String abono
 
     static constraints = {
 		abono(blank: false)
