@@ -2,6 +2,9 @@ package proyecto.celular
 
 class Telefono {
 	
+	static hasMany= [plans:Plan]
+	List plans
+	
 	String marca
 	String modelo
 	Boolean wifi
